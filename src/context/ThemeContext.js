@@ -12,7 +12,7 @@ export const ThemeProvider = ({ children }) => {
 		}
 	}
 	const [initialState, dispatch] = useReducer(themeReducer, {
-		bgColor: '#ec4899'
+		bgColor: '#334155'
 	})
 	const updateThemeColor = color => {
 		dispatch({ type: 'CHANGE_COLOR', payload: color })

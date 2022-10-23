@@ -6,7 +6,7 @@ import { CiDark } from 'react-icons/ci'
 import './SiteHeader.css'
 
 const SiteHeader = () => {
-	const themes = ['#64748b', '#6366f1', '#ec4899']
+	const themes = ['#334155', '#991b1b', '#115e59', '#075985', '#86198f']
 	const { updateThemeColor } = useTheme()
 
 	const changeThemeColor = evt => {
