@@ -5,3 +5,25 @@
 .header-inner {
 	justify-content: space-between;
 }
+.toggle-icon-btn svg {
+	fill: #fff;
+}
+.theme-switcher-wrap {
+	gap: 1.3rem;
+}
+.site-header .left-wrap,
+.site-header .right-wrap,
+.theme-btn-wrap,
+.theme-switcher-wrap,
+.toggle-icon-btn,
+.site-logo {
+	align-items: center;
+}
+.site-header .right-wrap {
+	gap: 1.5rem;
+}
+.theme-btn {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+}
