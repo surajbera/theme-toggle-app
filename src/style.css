@@ -30,3 +30,11 @@ body {
 	min-height: 100vh;
 	flex-direction: column;
 }
+
+.container {
+	padding: 0 13px;
+}
+
+button {
+	cursor: pointer;
+}

@@ -2,7 +2,7 @@
 import './SiteContent.css'
 
 const SiteContent = () => {
-	return <div>SiteContent</div>
+	return <div className='site-content flex-wrapper'>Theme Toggle App</div>
 }
 
 export default SiteContent

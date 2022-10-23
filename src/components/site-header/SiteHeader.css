@@ -1,0 +1,7 @@
+.site-header {
+	box-shadow: 0px 1px 20px 1px rgb(0 0 0 / 35%);
+	padding: 2rem 0;
+}
+.header-inner {
+	justify-content: space-between;
+}
