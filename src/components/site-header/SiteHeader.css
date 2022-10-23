@@ -27,3 +27,7 @@
 	height: 2rem;
 	border-radius: 50%;
 }
+.theme-btn-wrap {
+	border: 0.2rem solid var(--white-clr);
+	border-radius: 50%;
+}

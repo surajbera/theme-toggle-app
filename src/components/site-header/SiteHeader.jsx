@@ -1,3 +1,5 @@
+import { useTheme } from '../../hooks/useTheme'
+
 import { CiDark } from 'react-icons/ci'
 
 /* styles */
@@ -5,6 +7,12 @@ import './SiteHeader.css'
 
 const SiteHeader = () => {
 	const themes = ['#64748b', '#6366f1', '#ec4899']
+	const { updateThemeColor } = useTheme()
+
+	const changeThemeColor = evt => {
+		const color = evt.target.getAttribute('data-color')
+		updateThemeColor(color)
+	}
 
 	return (
 		<header className='site-header'>
@@ -22,7 +30,9 @@ const SiteHeader = () => {
 								>
 									<button
 										className='theme-btn'
+										data-color={theme}
 										style={{ backgroundColor: theme }}
+										onClick={changeThemeColor}
 									></button>
 								</li>
 							))}

@@ -14,9 +14,9 @@ export const ThemeProvider = ({ children }) => {
 	const [initialState, dispatch] = useReducer(themeReducer, {
 		bgColor: '#ec4899'
 	})
-	const changeColor = color => {
+	const updateThemeColor = color => {
 		dispatch({ type: 'CHANGE_COLOR', payload: color })
 	}
 
-	return <ThemeContext.Provider value={{ ...initialState, changeColor }}>{children}</ThemeContext.Provider>
+	return <ThemeContext.Provider value={{ ...initialState, updateThemeColor }}>{children}</ThemeContext.Provider>
 }
